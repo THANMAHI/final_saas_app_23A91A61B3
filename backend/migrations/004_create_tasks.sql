@@ -14,6 +14,3 @@ CREATE TABLE IF NOT EXISTS tasks (
 );
 
 CREATE INDEX idx_tasks_tenant_project ON tasks(tenant_id, project_id);
-
--- Down Migration
--- DROP TABLE IF EXISTS tasks;
