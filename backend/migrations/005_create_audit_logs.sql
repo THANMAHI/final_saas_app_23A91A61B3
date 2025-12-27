@@ -9,6 +9,3 @@ CREATE TABLE IF NOT EXISTS audit_logs (
     ip_address VARCHAR(50),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- Down Migration
--- DROP TABLE IF EXISTS audit_logs;
