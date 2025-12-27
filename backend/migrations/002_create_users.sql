@@ -11,6 +11,3 @@ CREATE TABLE IF NOT EXISTS users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(tenant_id, email)
 );
-
--- Down Migration
--- DROP TABLE IF EXISTS users;
