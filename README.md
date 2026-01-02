@@ -73,6 +73,7 @@ The application uses the following environment variables. See `.env.example` for
 | `FRONTEND_URL` | URL for CORS configuration | `http://localhost:3000` |
 
 ## 📹 Demo Video
+https://youtu.be/4vb_zZaG3JQ
 
 ## 📚 API Documentation
 See `docs/API.md` for full endpoint details and examples.
