@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider } from './context/AuthContext';
 import Navigation from './components/Navigation';
 import ProtectedRoute from './components/ProtectedRoute';
+import Tenants from './pages/Tenants';
 
 // Pages
 import Login from './pages/Login';
@@ -10,7 +11,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails'; 
-import Users from './pages/Users';// We will create this next
+import Users from './pages/Users';
 
 const Layout = ({ children }) => (
   <>
@@ -57,6 +58,16 @@ function App() {
             element={
               <ProtectedRoute>
                 <Layout><Users /></Layout>
+              </ProtectedRoute>
+            } 
+          />
+
+          
+          <Route 
+            path="/tenants" 
+            element={
+              <ProtectedRoute>
+                <Layout><Tenants /></Layout> {/* <--- Change Dashboard to Tenants */}
               </ProtectedRoute>
             } 
           />
